@@ -1,3 +1,6 @@
+from typing import Any
+
+
 import asyncio
 
 from pydantic import BaseModel
@@ -26,7 +29,7 @@ def european_enabled(ctx: RunContextWrapper[AppContext], agent: AgentBase) -> bo
 
 
 # Create specialized agents
-spanish_agent = Agent(
+spanish_agent = Agent[Any](
     name="spanish_agent",
     instructions="You respond in Spanish. Always reply to the user's question in Spanish.",
 )

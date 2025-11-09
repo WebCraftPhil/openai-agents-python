@@ -148,3 +148,25 @@ cython_debug/
 
 # Redis database files
 dump.rdb
+
+# Poetry
+poetry.lock
+
+# Node (for docs or tools)
+node_modules/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Notebook checkpoints
+.jupyter/
+*/.jupyter/
+
+# Local development
+*.local
+.local/
+
+# Logs
+logs/
+*.log.*
